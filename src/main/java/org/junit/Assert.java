@@ -108,6 +108,7 @@ public class Assert {
      */
     public static void assertEquals(String message, Object expected,
             Object actual) {
+        //when expected equal actual or expected == actual == null
         if (equalsRegardingNull(expected, actual)) {
             return;
         }
